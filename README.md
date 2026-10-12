@@ -33,7 +33,7 @@ The analysis is exploratory. With only 20 rounds, considerable score variability
 
 ## Full Report
 
-📄 [Read the full statistical report](https://teddyyyyyy.github.io/cixiang-road-big-two-championship/cixiang-road-big-two-championship.pdf)
+📄 [Read the full statistical report](📄 [Read the full statistical report](https://teddyyyyyy.github.io/cixiang-road-big-two-championship/cixiang-road-big-two-championship.pdf?v=20261012))
 
 ## Conclusion
 
