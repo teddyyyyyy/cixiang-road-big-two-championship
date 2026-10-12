@@ -1,52 +1,40 @@
-# 🃏 Cixiang Road Big Two Championship
+# Cixiang Road Big Two Championship 🃏
 
-### A Friendly Card Game, an Unnecessary Statistical Investigation
+*A friendly card game that turned into an exploratory statistical analysis.*
 
-What started as an argument between two friends about who was better at cards eventually turned into a 20-round Big Two championship—and a nine-page statistical research report.
+## Overview
 
-Big Two is a four-player card game where players compete to get rid of all their cards. Under our house rules, the winner earns the points lost by the other three players, including applicable penalties.
+Four players—Flower, Popo, Terry, and Teddy—competed in 20 rounds of Big Two under Taiwanese house rules.
 
-The question was simple: **Does winning a 20-round championship mean you're actually the strongest player?**
+We recorded the net scores from every round and investigated whether the observed differences provided evidence of long-term differences in player performance.
 
-## 🏆 Final Standings
+## Results
 
-| Rank | Player | Rounds Won | Total Score |
-|---|---|---:|---:|
-| 1 | Terry | 4 | +14 |
-| 2 | Teddy | 5 | +8 |
-| 3 | Popo | 7 | −1 |
-| 4 | Flower | 4 | −21 |
+| Player | Total Score | Rounds Won |
+|---|---:|---:|
+| Terry | +14 | 4 |
+| Teddy | +8 | 5 |
+| Popo | −1 | 7 |
+| Flower | −21 | 4 |
 
-Interestingly, Popo won the most rounds but finished third in total points.
+Terry won the championship, while Popo won the most individual rounds.
 
-## 📊 Statistical Analysis
+However, none of the six pairwise comparisons reached statistical significance after Holm correction.
 
-We treated the 20 rounds as paired observations and performed:
+## Statistical Methods
 
-- Six pairwise paired t-tests
+- Two-sided paired t-tests for six player comparisons
 - Holm correction for multiple comparisons
-- Exact paired sign-flip sensitivity tests
-- Confidence interval estimation
-- Sample-size planning for future games
+- Normal Q–Q plots and Shapiro–Wilk tests for normality diagnostics
+- Exact paired sign-flip tests as sensitivity analyses
+- Exploratory sample-size estimation for future games
 
-**Main finding:** None of the six player comparisons was statistically significant after Holm correction.
+The analysis is exploratory. With only 20 rounds, considerable score variability, and departures from normality in some paired differences, the results do not establish a definitive ranking of long-term playing ability.
 
-This does not prove that the players are equally skilled. It means the available data are insufficient to establish a long-term mean-score advantage.
+## Full Report
 
-## 📄 Full Research Report
+📄 [Read the full statistical report](https://teddyyyyyy.github.io/cixiang-road-big-two-championship/cixiang-road-big-two-championship.pdf)
 
-[**Read the complete nine-page statistical report (PDF)**](cixiang-road-big-two-championship.pdf)
+## Conclusion
 
-The report includes the complete house rules, all 20 rounds of recorded scores, statistical methods, results, limitations, and sample-size calculations.
-
-## 🔬 What's Next?
-
-Our preliminary sample-size calculations suggest that approximately **400–1,100 rounds** may be required to detect a true mean difference of three points per round with 80% power for an individual player comparison, under the stated assumptions.
-
-We plan to continue playing and collecting data more systematically, using the current 20 rounds as pilot data.
-
-Apparently, settling a friendly card game argument may require a thousand more games.
-
----
-
-*An independent personal side project exploring statistical inference, experimental design, and uncertainty—with a little help from playing cards.*
+**Terry won the championship. Whether Terry is the strongest player in the long run remains an open question.**
